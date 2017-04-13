@@ -1,0 +1,13 @@
+/* Style sheet for backgroundPractice.html */
+/* External style sheet */
+body {
+    font-family: arial, helvetica, sans-serif;
+    background-image: url(nogusa2.jpg);
+    background-position: top left;
+}
+
+p {
+    font-size: 14pt;
+    color: DarkBlue;
+    text-indent: 1em;
+}
