@@ -1,3 +1,7 @@
+*********       Tya Chuanromanee        **********
+*********       Week 2 Demos            **********
+*********       2.1 to 2.5              **********
+
 2.1
 
 UsePictures> printPicture(blackHorse)

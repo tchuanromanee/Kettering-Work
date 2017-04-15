@@ -1,3 +1,9 @@
+*********       Tya Chuanromanee        **********
+*********       Week 2 Programs         **********
+*********       2.1 to 2.5              **********
+
+> module Week3Programs where
+
 2.1 Define a module UsePictures which imports Pictures and contain? definitions
 of blackHorse, rotate and rotateHorse which can use the detinitions
 imported from Pictures.
