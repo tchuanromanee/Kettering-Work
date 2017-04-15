@@ -1,0 +1,22 @@
+***************		Tya Chuanromanee		***************
+***************			Demo Homework		***************
+***************		Task1 to Task4			***************
+
+
+Task 4:
+Main> doubleSquare 2
+16
+Main> squareDouble 2
+8
+Main> doubleSquare 10
+400
+Main> squareDouble 10
+200
+Main> doubleSquare 0
+0
+Main> squareDouble 0
+0
+Main> doubleSquare (-1)
+4
+Main> squareDouble (-1)
+2
