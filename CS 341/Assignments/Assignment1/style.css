@@ -1,13 +1,26 @@
 body {
     background-color: SteelBlue;
     background-image: url(seamless_pattern_color_02.jpg);
+    font-size: 12pt;
+    font-family: sans-serif, arial;
 }
 
+/* Header definitions */
 h1 {
     font-size: 16pt;
     font-family: sans-serif, arial;
     text-align: center;
 }
+
+h2 {
+    font-size: 14pt;
+}
+
+/* Text decoration elements */
+strong, em {
+    color: #ABC1D0;
+}
+
 
 table {
     border-color: steelblue;
@@ -25,5 +38,6 @@ td {
     padding: 5px;
     margin: auto;
     background-color: white;
-    width: 65%;
+    width: 60%;
+    text-align: justify;
 }
