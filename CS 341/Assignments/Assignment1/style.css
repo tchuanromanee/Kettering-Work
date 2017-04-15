@@ -1,0 +1,29 @@
+body {
+    background-color: SteelBlue;
+    background-image: url(seamless_pattern_color_02.jpg);
+}
+
+h1 {
+    font-size: 16pt;
+    font-family: sans-serif, arial;
+    text-align: center;
+}
+
+table {
+    border-color: steelblue;
+    border-width: thin;
+    border-style: solid;
+}
+
+td {
+    padding: 2px;
+}
+
+/* Div definitions */
+.maincontent {
+    position: relative;
+    padding: 5px;
+    margin: auto;
+    background-color: white;
+    width: 65%;
+}
