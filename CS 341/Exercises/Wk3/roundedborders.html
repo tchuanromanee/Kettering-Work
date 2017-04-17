@@ -32,11 +32,27 @@
                 margin-right: 120px;
                 margin-top: 40px;
             }
+            #gradient
+            {
+                width: 200px;
+                height: 200px;
+                border: 3px solid navy;
+                padding: 5px 20px;
+                text-align: center;
+                background: -webkit-gradient(linear, center top, center bottom,
+                        color-stop(15%, White), color-stop(50%, lightsteelblue),
+                        color-stop(75%, navy));
+                background: -moz-linear-gradient(top center, white 15%, lightsteelblue 50%, navy 75%);
+                background: linear-gradient(top, White 15%, lightsteelblue 50%, navy 75%);
+                float: left;
+                margin-right: 15px;
+            }
         </style>
     </head>
     <body>
         <div>The border-radius property adds rounded corners to an element </div>
         <div id = "round2">Increasing the border-radius rounds the corners of the element more.</div>
         <div id = "boxshadow">blebleble</div>
+        <div id = "gradient">grad</div>
     </body>
 </html>
