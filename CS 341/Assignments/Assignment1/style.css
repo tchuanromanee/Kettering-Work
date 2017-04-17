@@ -9,11 +9,25 @@ body {
 h1 {
     font-size: 16pt;
     font-family: sans-serif, arial;
+    color: #545960;
     text-align: center;
+    border-bottom: 1px solid #545960;
 }
 
 h2 {
     font-size: 14pt;
+    color: #7789a3;
+}
+
+/* Link definitions */
+a {
+    color: #545960;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ABC1D0;
+    text-decoration: none;
 }
 
 /* Text decoration elements */
@@ -21,6 +35,14 @@ strong, em {
     color: #ABC1D0;
 }
 
+img {
+    padding: 10px;
+}
+
+dt {
+    font-style: italic;
+    color: #545960;
+}
 
 table {
     border-color: steelblue;
@@ -29,13 +51,17 @@ table {
 }
 
 td {
-    padding: 2px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
 }
 
 /* Div definitions */
 .maincontent {
     position: relative;
-    padding: 5px;
+    padding: 15px;
     margin: auto;
     background-color: white;
     width: 60%;
