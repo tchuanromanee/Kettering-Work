@@ -41,3 +41,33 @@ Main> threeDiff 4 3 3
 False
 Main> threeDiff 1 2 3
 True
+
+3.8
+Main> fourEqual 1 1 1 1
+True
+Main> fourEqual 1 2 2 2
+False
+Main> fourEqual 1 1 2 2
+False
+Main> fourEqual 1 2 3 4
+False
+Main> fourEqual 1 1 1 2
+False
+Main> fourEqual 1 2 2 1
+False
+Main> fourEqual 1 2 3 1
+False
+Main> fourEqualDerived 1 1 1 1
+True
+Main> fourEqualDerived 1 2 2 2
+False
+Main> fourEqualDerived 1 1 2 2
+False
+Main> fourEqualDerived 1 2 3 4
+False
+Main> fourEqualDerived 1 1 1 2
+False
+Main> fourEqualDerived 1 2 2 1
+False
+Main> fourEqualDerived 1 2 3 1
+False

@@ -115,5 +115,14 @@ The result is false.
 fourEqual : : Int -> Int -> Int -> Int -> Bool
 which returns the value True only if all four of its arguments are equal.
 Give a definition of fourEqua1 modelled on the definition of threeEqua1
-above. Now give a definition off ourEqual which u . w v the function threeEqual
-in its detinition. Compare your two answers.
+above. Now give a definition off fourEqual which uses the function threeEqual
+in its definition. Compare your two answers.
+
+> threeEqual :: Int -> Int -> Int -> Bool
+> threeEqual a b c = (a == b) && (b == c)
+
+> fourEqual :: Int -> Int -> Int -> Int -> Bool
+> fourEqual a b c d = (a == b) && (b == c) && (c == d)
+
+> fourEqualDerived :: Int -> Int -> Int -> Int -> Bool
+> fourEqualDerived a b c d = (threeEqual a b c) && (a == d)
