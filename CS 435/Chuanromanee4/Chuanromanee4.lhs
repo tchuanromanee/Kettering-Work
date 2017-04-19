@@ -37,20 +37,24 @@ diagram illustrating one of your definitions.
 nAnd True True
 nAnd True False
 for each of your definitions of nAnd in the previous exercise
-> nAnd1 True True
+
+~ nAnd1 True True
 ~ not (True && True)
 ~ not True
 ~ False
-> nAnd1 True False
+
+~ nAnd1 True False
 ~ not (True && False)
 ~ not False
 ~ True
-> nAnd2 True True
+
+~ nAnd2 True True
 ~ (not True) || (not True)
 ~ False || (not True)
 ~ False || False
 ~ False
-> nAnd2 True False
+
+~ nAnd2 True False
 ~ (not True) || (not False)
 ~ False || (not False)
 ~ False || True
@@ -63,24 +67,53 @@ mystery m n p = not ((m==n) && (n==p))
 Hint: if you find it difficult to answer this question directly, try to see what the
 function does on some example inputs.
 
-The function determines if the number contains no more than 2 equal numbers
+The function determines if the sequence contains no more than 2 equal numbers
+Or, to word it differently, the sequence does not contain all the same numbers.
 For example:
-> mystery 1 3 1
+
+~ mystery 1 3 1
 ~ not ((1==3) && (3==1))
 ~ not (False && (3==1))
 ~ not (False && False)
 ~ not False
 ~ True
 
-> mystery 1 2 3
+~ mystery 1 2 3
 ~ not ((1==2) && (2==3))
 ~ not (False && False))
 ~ not False
 ~ True
 
-> mystery 3 3 3
+~ mystery 3 3 3
 ~ not ((3==3) && (3==3))
 ~ not (True && (3==3))
 ~ not (True && True)
 ~ not True
 ~ False
+
+3.7 Define a function
+threeDifferent :: Int -> Int -> Int -> Bool
+so that the result of threeDif f erent m n p is True only if all three of the
+numbers m, n and p are different.
+What is your answer for threeDifferent 3 4 3? Explain why you get the
+answer that you do.
+
+> threeDiff :: Int -> Int -> Int -> Bool
+> threeDiff m n p = (m /= n) && (n /= p) && (m /= p)
+
+The result is false.
+~ threeDiff 3 4 3
+~ (3 /= 4) && (4 /= 3) && (3 /= 3)
+~ True && (4 /= 3) && (3 /= 3)
+~ True && True && (3 /= 3)
+~ True && True && False
+~ True && False
+~ False
+
+
+3.8 This question is about the function
+fourEqual : : Int -> Int -> Int -> Int -> Bool
+which returns the value True only if all four of its arguments are equal.
+Give a definition of fourEqua1 modelled on the definition of threeEqua1
+above. Now give a definition off ourEqual which u . w v the function threeEqual
+in its detinition. Compare your two answers.

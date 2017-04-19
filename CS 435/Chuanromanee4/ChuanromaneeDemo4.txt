@@ -28,3 +28,16 @@ Main> nAnd2 True False
 True
 Main> nAnd2 True True
 False
+
+
+3.7
+Main> threeDiff 3 4 3
+False
+Main> threeDiff 3 3 3
+False
+Main> threeDiff 3 3 4
+False
+Main> threeDiff 4 3 3
+False
+Main> threeDiff 1 2 3
+True
