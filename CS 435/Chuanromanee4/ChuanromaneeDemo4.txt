@@ -1,0 +1,30 @@
+ADD HEADER HERE
+
+3.1
+Main> exOr True False
+True
+Main> exOr True True
+False
+Main> exOr False True
+True
+Main> exOr False False
+False
+
+
+3.4
+Main> nAnd1 False False
+True
+Main> nAnd1 False True
+True
+Main> nAnd1 True False
+True
+Main> nAnd1 True True
+False
+Main> nAnd2 False False
+True
+Main> nAnd2 False True
+True
+Main> nAnd2 True False
+True
+Main> nAnd2 True True
+False
