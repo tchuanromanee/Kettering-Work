@@ -179,8 +179,43 @@ fourEqual (2+3) 5 (11 'div' 2) (21 'mod' 11)
 max (3-2) (3*8)
 maxThree (4+5) (2*6) (100 'div' 7)
 
-3.1 1 Give definitions of the functions
+~ max (3-2) (3*8)
+~   (3-2) >= (3*8)
+~   1 >= (3*8)
+~   1 >= 24
+~   False
+~   (3*8)
+~   24
+
+~ maxThree (4+5) (2*6) (100 `div` 7)
+~   ((4+5) >= (2*6)) && ((4+5) >= (100 `div` 7))
+~   (9 >= (2*6)) && ((4+5) >= (100 `div` 7))
+~   (9 >= 12) && ((4+5) >= (100 `div` 7))
+~   (9 >= 12) && (9 >= (100 `div` 7))
+~   (9 >= 12) && (9 >= 14)
+~   False && (9 >= 14)
+~   False && False
+~   False
+~   ((2*6) >= (100 `div` 7))
+~   (12 >= (100 `div` 7))
+~   (12 >= 14)
+~   False
+~   (100 `div` 7)
+~   14
+
+
+3.11 Give definitions of the functions
 min :: Int -> Int -> Int
 minThree : : Int -> Int -> Int -> Int
 which calculate the minimurn of two and three integers, respectively.
-(Th
+
+> min :: Int -> Int -> Int
+> min a b
+>   | (a <= b) = a
+>   | otherwise = b
+
+> minThree :: Int -> Int -> Int -> Int
+> minThree a b c
+>   | (a <= b) && (a <= c) = a
+>   | (b <= c) = b
+>   | otherwise = c
