@@ -61,4 +61,26 @@ for each of your definitions of nAnd in the previous exercise
 mystery :: Int -> Int -> Int -> Bool
 mystery m n p = not ((m==n) && (n==p))
 Hint: if you find it difficult to answer this question directly, try to see what the
-function doe5 on some example inputs.
+function does on some example inputs.
+
+The function determines if the number contains no more than 2 equal numbers
+For example:
+> mystery 1 3 1
+~ not ((1==3) && (3==1))
+~ not (False && (3==1))
+~ not (False && False)
+~ not False
+~ True
+
+> mystery 1 2 3
+~ not ((1==2) && (2==3))
+~ not (False && False))
+~ not False
+~ True
+
+> mystery 3 3 3
+~ not ((3==3) && (3==3))
+~ not (True && (3==3))
+~ not (True && True)
+~ not True
+~ False
