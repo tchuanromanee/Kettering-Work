@@ -98,11 +98,11 @@ numbers m, n and p are different.
 What is your answer for threeDifferent 3 4 3? Explain why you get the
 answer that you do.
 
-> threeDiff :: Int -> Int -> Int -> Bool
-> threeDiff m n p = (m /= n) && (n /= p) && (m /= p)
+> threeDifferent :: Int -> Int -> Int -> Bool
+> threeDifferent m n p = (m /= n) && (n /= p) && (m /= p)
 
 The result is false.
-~ threeDiff 3 4 3
+~ threeDifferent 3 4 3
 ~ (3 /= 4) && (4 /= 3) && (3 /= 3)
 ~ True && (4 /= 3) && (3 /= 3)
 ~ True && True && (3 /= 3)
@@ -126,3 +126,61 @@ in its definition. Compare your two answers.
 
 > fourEqualDerived :: Int -> Int -> Int -> Int -> Bool
 > fourEqualDerived a b c d = (threeEqual a b c) && (a == d)
+
+
+3.9 Give line-by-line calculations of
+threeEqua1 (2+3) 5 (11 'div' 2)
+mystery (2+4) 5 (11 'div' 2)
+threeDifferent (2+4) 5 (I1 'div' 2)
+fourEqual (2+3) 5 (11 'div' 2) (21 'mod' 11)
+
+threeEqual (2+3) 5 (11 'div' 2)
+~ ((2+3) == 5) && (5 == (11 'div'2))
+~ (5 == 5) && (5 == (11 'div'2))
+~ (5 == 5) && (5 == 5)
+~ True && (5 == 5)
+~ True && True
+~ True
+
+mystery (2+4) 5 (11 'div' 2)
+~ not (((2+4) == 5) && ( 5 == (11 `div` 2))
+~ not ((6 == 5) && (5 == (11 `div` 2))
+~ not ((6 == 5) && (5 == 5))
+~ not (False && (5 == 5))
+~ not (False && True)
+~ not False
+~ True
+
+threeDifferent (2+4) 5 (11 'div' 2)
+~ ((2+4) /= 5) && (5 /= (11 `div` 2) && ((2+4) /= (11 `div` 2))
+~ (6 /= 5) && (5 /= (11 `div` 2) && ((2+4) /= (11 `div` 2))
+~ (6 /= 5) && (5 /= 5) && ((2+4) /= (11 `div` 2))
+~ (6 /= 5) && (5 /= 5) && (6 /= (11 `div` 2))
+~ (6 /= 5) && (5 /= 5) && (6 /= 5)
+~ True && (5 /= 5) && (6 /= 5)
+~ True && False && (6 /= 5)
+~ True && False && True
+~ False && True
+~ False
+
+fourEqual (2+3) 5 (11 'div' 2) (21 'mod' 11)
+~ ((2+3) == 5) && (5 == (11 'div' 2)) && ((11 'div' 2) == (21 'mod' 11))
+~ (5 == 5) && (5 == (11 'div' 2)) && ((11 'div' 2) == (21 'mod' 11))
+~ (5 == 5) && (5 == 5) && ((11 'div' 2) == (21 'mod' 11))
+~ (5 == 5) && (5 == 5) && ((5 == (21 'mod' 11))
+~ (5 == 5) && (5 == 5) && (5 == 10)
+~ True && (5 == 5) && (5 == 10)
+~ True && True && (5 == 10)
+~ True && True && False
+~ True && False
+~ False
+
+3.10 Give calculations of
+max (3-2) (3*8)
+maxThree (4+5) (2*6) (100 'div' 7)
+
+3.1 1 Give definitions of the functions
+min :: Int -> Int -> Int
+minThree : : Int -> Int -> Int -> Int
+which calculate the minimurn of two and three integers, respectively.
+(Th
