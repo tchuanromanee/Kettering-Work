@@ -5,7 +5,13 @@
         <title>Multiple Lines in a Dialog Box</title>
         <script type = "text/javascript">
             <!--
-            window.alert( "\n\n****\n\n");
+            window.alert( "\n\n****\n\nmmm");
+
+            var name; // String entered by the user
+            // JS does not have strict types
+            // read the name from the prompt box as a string
+            name = window.prompt("Please enter your name");
+            document.writeln("<h1>Hello " + name + ", welcome!</h1>");
             // -->
         </script>
     </head>
