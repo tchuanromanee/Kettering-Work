@@ -59,7 +59,8 @@ footer {
 }
 
 /* Div definitions */
-.maincontent {
+/* The div is an ID because maincontent will only occur once */
+#maincontent {
     position: relative;
     padding: 15px;
     margin: auto;

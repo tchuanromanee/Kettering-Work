@@ -1,41 +1,56 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
-        <meta charset = "UTF-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
         <title>Welcome to My Page!</title>
         <link rel = "stylesheet" type = "text/css" href = "style.css">
     </head>
     <body>
-        <div class = "maincontent">
-            <h1>Welcome to Tee's Page!</h1>
+        <div id = "maincontent">
+            <h1 id = "Welcome">Welcome to Tee's Page!</h1>
             <p>
                 My name is Tee and I'm a student at Kettering University. I was born and grew up in Ann Arbor, MI, and graduated high school in 2014.
                 I went to Milwakuee School of Engineering (MSOE), majoring in Mechanical Engineering. After one year there, I found out that software
                 is much more my thing than hardware. I transferred here and switched my major to Computer Science, which is where I am since!
             </p>
             <p>
-                Please look around this page. It will give you a bit of information about me. Hope you enjoy!
+                Please look around this page. It will give you a bit of information about me. The below links point to each section of this page. Hope you enjoy!
             </p>
-            <h1>Professional Stuff</h1>
-            <h2>Co-op</h2>
+                <ul>
+                    <li>
+                        <a href = "#professional">Professional</a>
+                        <ul>
+                            <li><a href = "#coop">Co-op</a></li>
+                            <li><a href = "#classes">Classes</a></li>
+                            <li><a href = "#thesis">Thesis</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "#interests">Interests</a></li>
+                    <li><a href = "#pictures">Pictures</a></li>
+                    <li><a href = "#learnthai">Learn Thai</a></li>
+                    <li><a href = "#contact">Contact Me</a></li>
+                    <li><a href = "#socialmedia">Social Media Links</a></li>
+                </ul>
+            <h1 id = "professional">Professional Stuff</h1>
+            <h2 id = "coop">Co-op</h2>
             <p>
                 Since I'm a transfer student with >40 credits, I only need 4 work terms to graduate. I worked all 4 terms at Bosch, with my first term
                 being a tester in their Car Multimedia department and the other three terms as a software engineering intern in their Chassis Systems
                 Control department. I really enjoyed my time there, but now I'm working towards my thesis full time during my next 2 work terms.
             </p>
-            <h2>Classes</h2>
+            <h2 id = "classes">Classes</h2>
             <p>
                 I've taken the following CS classes:
+            </p>
                 <ul>
                     <li><strong>CS 101</strong> with Dr. Vineyard</li>
                     <li><strong>CS 102</strong> with Dr. Turini</li>
                     <li><strong>CS 211</strong> with Dr. Geske</li>
                     <li><strong>CS 203</strong> with Dr. Wang</li>
                 </ul>
-            </p>
             <p>
                 This term, I'm taking 5 classes:
+            </p>
                 <ol>
                     <li><em>CE 320</em> with Dr. Tewolde</li>
                     <li><em>CS 202</em> with Dr. Wang</li>
@@ -43,13 +58,12 @@
                     <li><em>CS 435</em> with Dr. Kanchi</li>
                     <li><em>ECON 350</em> with Prof. Okraku</li>
                 </ol>
-            </p>
-            <h2>Thesis</h2>
+            <h2 id = "thesis">Thesis</h2>
             <p>
                 I'm working on a thesis called "Diagnostic Assistance Software for Mental Health Professionals." It's an entrepreneural thesis, and I'm planning
                 on finishing it Spring 2018.
             </p>
-            <h1>My Interests</h1>
+            <h1 id = "interests">My Interests</h1>
             <p>Here are some of my interests!</p>
             <table>
                 <thead>
@@ -82,27 +96,26 @@
                     </tr>
                 </tbody>
             </table>
-            <h1>Pictures</h1>
+            <h1 id = "pictures">Pictures</h1>
             <p>
                 I'm not much of a picture taker, buth here are two pictures!<br />
-                <img src="kohchang.jpg" alt="Koh Chang in Thailand" width = "20%" height = "20%" align = "right">
-                I took this picture during our family trip to Koh Chang in Thailand in December 2015. Koh Chang is part of a group of islands off the east coast of Thailand.
+                <img src="kohchang.jpg" alt="Koh Chang in Thailand"  style="width: 20%; height: 20%; float: right;"> <!--use inline style ionstead to comply w validation -->
+                I took this picture during our family trip to Koh Chang in Thailand in December 2015. It's right before sunset, but after walking for 45 minutes
+                unfortunately the sun was hiding behind the clouds when we arrived :(
+                Koh Chang is part of a group of islands off the east coast of Thailand.
                 It is near the Cambodian border, and during the 60s and 70s many refugees escaped through this route.
             </p>
             <p> We left from Bangkok, stayed in a hotel in Chantaburi, and stopped
                 by a waterfall called "Namtok Phlio." It's part of a national park and there weren't many people when we went. Overall a very fun trip!
             </p>
-            <p>
                 <figure>
-                    <img src="teddy.jpeg" alt="Picture of my dog" width = "30%" height = "50%" align = "top">
-                  <figcaption>Our dog Teddy</figcaption>
+                    <img src="teddy.jpeg" alt="Picture of my dog" style="width: 30%; height:50%; vertical-align: top;"> <!--use inline style ionstead to comply w validation -->
+                  <figcaption>Teddy was our dog from 2006-2015. We adopted him December 30, 2006, when he was 3 months old. He is a golden retriever/chow chow mix.
+                      He loved to play but he loved to eat even more. He passed away December 22, 2015 due to cancer. Rest in peace!</figcaption>
                 </figure>
-                Teddy was our dog from 2006-2015. We adopted him December 30, 2006, when he was 3 months old. He is a golden retriever/chow chow mix. He loved to play but he loved to eat
-                even more. Rest in peace!
-            </p>
 
-            <h1>Learn a little Thai!</h1>
-            I'm Thai-American, but I grew up speaking Thai only at home until I went to school. Here are some Thai words you can learn!
+            <h1 id = "learnthai">Learn a little Thai!</h1>
+            I'm Thai-American, born and raised in Ann Arbor. I grew up speaking Thai only at home until I went to school. Here are some Thai words you can learn!
             <dl>
                 <dt>Hew (หิว)</dt>
                 <dd>Hungry. The -ew sound is short</dd>
@@ -111,14 +124,14 @@
                 <dt>Rien (เรียน)</dt>
                 <dd>Learn. Pronounced ree-en. The tone is even.</dd>
             </dl>
-            <h1>Contact Me</h1>
+            <h1 id = "contact">Contact Me</h1>
             Here is my contact information:
                 <address>
-                    Email: chua0563@kettering.edu<br />
+                    Email: <a href = "mailto:chua0563@kettering.edu">chua0563@kettering.edu</a><br />
                     Phone: (123)-456-7890<br />
                     Home Address:<br /> 1234 Shady Street<br />Ann Arbor, MI 48108
                 </address>
-            <h1>Social Media</h1>
+            <h1 id = "socialmedia">Social Media</h1>
             I'm on the following sites:
             <ul>
                 <li><a href = "http://facebook.com/tee.chuanromanee" title = "Facebook Profile">Facebook</a></li>
