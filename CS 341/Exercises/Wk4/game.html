@@ -1,0 +1,78 @@
+<!--Random image generator using user input -->
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Game</title>
+        <script>
+            // variables used to interact with img elements
+            var computerdie1;
+            var computerdie2;
+            var playerdie1;
+            var playerdie2;
+            var messages;
+
+            var myPoint;
+            var theirPoint;
+            var computerRollValue;
+            var userRollValue;
+
+            var comproll1;
+            var comproll2;
+            var playerRoll1;
+            var playerRoll2;
+            var compSum;
+            var playerSum;
+            myPoint = 0;
+            theirPoint = 0;
+            // register button listener and get the img elements
+            function startGame() {
+                var button = document.getElementById("rollButton");
+                image1 = document.getElementById( "img1");
+                image2 = document.getElementById( "img2");
+                image3 = document.getElementById( "img3");
+                image4 = document.getElementById( "img4");
+                button.addEventListener( "click", rollDice, false);
+                dicerolling = element.getElementById( "dicerolling" );
+                computerdie1 = document.getElementById( "pointDie1" );
+                computerdie2 = document.getElementById( "pointDie2");
+                playerdie1 = document.getElementById("rollDie1");
+                playerdie2 = document.getElementById("rollDie2");
+                messages = document.getElementById("messages");
+                playButton = document.getElementById("play");
+            }
+
+            // Roll the dice
+            function rollDice() {
+                comproll1 = setImage(computerdie1);
+                comproll2 = setImage(computerdie2);
+                playerRoll1 = setImage(playerdie1);
+                playerRoll2 = setImage(playerdie2);
+                compSum = comproll1 + comproll2;
+                playerSum = playerRoll1 + playerRoll2;
+                if (compSum > playerSum) { theirPoint++;}
+                else if (playerSum > compSum) {myPoint++; }
+                document.write("<br>Player score: " + myPoint);
+                document.write("Computer score: " + theirPoint);
+
+            }
+
+            function setImage(dieImg) {
+                var randomValue = Math.floor(1 + Math.random()*6);
+                //dieImg.setAttribute("src", "rol" + randomValue + ".png");
+                //dieImg.setAttribute("alt", "Image for " + randomValue + "value");
+                return randomValue;
+            }
+            window.addEventListener("load", startGame, false );
+        </script>
+    </head>
+    <body>
+        <form action = "#">
+            <input id = "rollButton" type = "button" value = "Roll">
+            <input id = "clear" type = "button" value = "Reset">
+        </form>
+        <p id = "playerRoll">Player rolled: </p>
+        <p id = "computerRoll">Computer rolled: </p>
+        <p id = "theirpoints">Computer's score: 0</p>
+        <p id = "mypoints">Player's score: 0</p>
+    </body>
+</html>

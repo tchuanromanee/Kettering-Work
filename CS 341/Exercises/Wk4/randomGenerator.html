@@ -1,0 +1,52 @@
+<!--Random image generator using user input -->
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Random Images</title>
+        <style type = "text/css">
+        </style>
+        <script>
+            // variables used to interact with img elements
+            var image1;
+            var image2;
+            var image3;
+            var image4;
+
+            // register button listener and get the img elements
+            function start() {
+                var button = document.getElementById("rollButton");
+                button.addEventListener( "click", rollDice, false);
+                image1 = document.getElementById( "img1");
+                image2 = document.getElementById( "img2");
+                image3 = document.getElementById( "img3");
+                image4 = document.getElementById( "img4");
+            }
+
+            // Roll the dice
+            function rollDice() {
+                setImage(image1);
+                setImage(image2);
+                setImage(image3);
+                setImage(image4);
+            }
+
+            function setImage(dieImg) {
+                var randomValue = Math.floor(1 + Math.random()*4);
+                dieImg.setAttribute("src", "roll" + randomValue + ".png");
+                dieImg.setAttribute("alt", "Image for " + randomValue + "value");
+            }
+            window.addEventListener("load", start, false );
+        </script>
+    </head>
+    <body>
+        <form action = "#">
+            <input id = "rollButton" type = "button" value = "Generate Random">
+        </form>
+        <ol>
+            <li><img id = "img1" src = "blank.png" alt = "blank img"></li>
+            <li><img id = "img2" src = "blank.png" alt = "blank img"></li>
+            <li><img id = "img3" src = "blank.png" alt = "blank img"></li>
+            <li><img id = "img4" src = "blank.png" alt = "blank img"></li>
+        </ol>
+    </body>
+</html>
