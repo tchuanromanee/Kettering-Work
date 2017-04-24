@@ -1,4 +1,6 @@
-ADD HEADER HERE
+*********       Tya Chuanromanee        **********
+*********       Week 4 Demos            **********
+*********       3.1 to 3.11  (no 3.2)   **********
 
 3.1
 Main> exOr True False
@@ -31,15 +33,15 @@ False
 
 
 3.7
-Main> threeDiff 3 4 3
+Main> threeDifferent 3 4 3
 False
-Main> threeDiff 3 3 3
+Main> threeDifferent 3 3 3
 False
-Main> threeDiff 3 3 4
+Main> threeDifferent 3 3 4
 False
-Main> threeDiff 4 3 3
+Main> threeDifferent 4 3 3
 False
-Main> threeDiff 1 2 3
+Main> threeDifferent 1 2 3
 True
 
 3.8

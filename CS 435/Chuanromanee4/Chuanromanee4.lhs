@@ -1,5 +1,8 @@
-ADD HEADER HERE
-3.4 DIAGRAM
+*********       Tya Chuanromanee        **********
+*********       Week 4 Programs         **********
+*********       3.1 to 3.11 (no 3.2)    **********W
+
+> module Week4Programs where
 
 3.1 Give another version of the definition of 'exclusive or' which works informally
 thus: 'exclusive or of x and y will be True if either x is True and y is False. or
@@ -70,7 +73,6 @@ function does on some example inputs.
 The function determines if the sequence contains no more than 2 equal numbers
 Or, to word it differently, the sequence does not contain all the same numbers.
 For example:
-
 ~ mystery 1 3 1
 ~ not ((1==3) && (3==1))
 ~ not (False && (3==1))
@@ -93,7 +95,7 @@ For example:
 
 3.7 Define a function
 threeDifferent :: Int -> Int -> Int -> Bool
-so that the result of threeDif f erent m n p is True only if all three of the
+so that the result of threeDifferent m n p is True only if all three of the
 numbers m, n and p are different.
 What is your answer for threeDifferent 3 4 3? Explain why you get the
 answer that you do.
