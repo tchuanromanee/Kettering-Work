@@ -1,0 +1,47 @@
+For this class:
+Starts with 0x -> hex
+Starts with 0 -> octal
+
+Special numbers: Infinity
+NaN
+Number.MAX_VALUE
+Number.MIN_VALUE
+Number.POSITIVE_INFINITY
+Number.NEGATIVE_INFINITY
+
+Ex:
+var x = 33;
+var y = x.toString(2)
+-> y = 100001 (2 means base 2, as in binary)
+
+
+All variables are global.
+Variables inside a function are local.
+
+
+var a = 3.14;
+var b = a;
+a = 4;
+b is still 3.14 (like Java)
+
+
+1 + 2 -> int 3
+"1" + "2" -> String "12"
+"1" + 2 -> Same as above
+11 < 3 -> False
+"11" < "3" -> True
+"11" < 3 -> False
+
+
+parseInt("11", 2) - > 3 ('11' in bin is 3 in decimal)
+parseInt("ff", 16) - > 255
+parseInt("077", 8) -> 63 (Octal)
+parseInt("077", 10) -> 77 (Decimal)
+
+
+=== in jS is equal and same type (Strictly Equal: http://stackoverflow.com/questions/523643/difference-between-and-in-javascript)
+
+** Midterm: Something connected to Date: current date and time (Object Date) **
+
+1st part: Program part of midterm: can use any resources
+2nd part: multiple choice questions, closed-book

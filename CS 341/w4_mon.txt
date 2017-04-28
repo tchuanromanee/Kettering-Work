@@ -1,0 +1,35 @@
+For HW and Midterm JS, have interactive JS; meaning, listeners to respond to user action
+
+
+Define and write one game with alternating turns between player and computer
+
+Questions:
+1. Is HTML case sensitive? No
+
+2. Is jS case sensitive? Yes
+
+3. What is the name of the jS object that displays browser content? Document
+
+4. Double quotes enclose single, but not the other way around
+
+5. What is the value of x: 
+	x = (100 != 200); (True)
+
+6. setTimeOut() starts the clock: how to stop? clearTimeOut()
+
+7. If you define one button to not to say the name, what is the reason of the button? submitquery [DC]
+
+8. What is the official name for javaScript? (ie. the name before jS) wipeScript [DC]lifescript
+
+9. What is the name that is ___ to the current browser? Windows
+
+
+
+10. If you have one window with 2 screens, how to set to set the window to be active in the screen? (ie. activate the screen)
+	focus
+
+11. What is default status in the browser? The line across the bottom of the window (the status bar)
+
+12. Which position is 00? upper left
+
+13.

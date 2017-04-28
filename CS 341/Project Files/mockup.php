@@ -22,7 +22,7 @@
                         placeholder = "Password"/>
                     </label>&nbsp;
                     <input type = "submit" value = "Submit" />
-              </form>
+                </form>
              <input id = "searchForum" type = "search" placeholder = "search"><br>
                 <p>
                     <!--Add breadcrumb navigation here -->

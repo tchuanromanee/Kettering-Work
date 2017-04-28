@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+        <title>Welcome to the Air Ticket Reservation System!</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <script src = "ticketReservation.js"></script>
+    </head>
+    <body>
+        <div id = "maincontent">
+            <h1 id = "Welcome">Welcome to the Air Ticket Reservation System!</h1>
+            <p>
+                Insert info about ticket reservation here
+            </p>
+            <h1 id = "professional">Reserve Tickets</h1>
+            <form method = "get" autocomplete = "on" id ="ticketForm">
+                <label>From:
+                    <select name = "fromList" form = "ticketForm" required>
+                        <option value = ""> </option>
+                        <option value = "bkk">Suvarnabhumi Airport (BKK)</option>
+                        <option value = "dtw">Detroit Metropolitan Airport (DTW)</option>
+                        <option value = "inc">Incheon International Airport (ICN)</option>
+                        <option value = "lga">LaGuardia Airport (LGA)</option>
+                        <option value = "nrt">Narita International Airport (NRT)</option>
+                        <option value = "sin">Singapore Changi Airport (SIN)</option>
+                        <option value = "syd">Sydney Airport (SYD)</option>
+                    </select>
+                </label>&nbsp;
+                <label>To:
+                    <select name = "toList" form = "ticketForm" required>
+                        <option value = ""> </option>
+                        <option value = "bkk">Suvarnabhumi Airport (BKK)</option>
+                        <option value = "dtw">Detroit Metropolitan Airport (DTW)</option>
+                        <option value = "inc">Incheon International Airport (ICN)</option>
+                        <option value = "lga">LaGuardia Airport (LGA)</option>
+                        <option value = "nrt">Narita International Airport (NRT)</option>
+                        <option value = "sin">Singapore Changi Airport (SIN)</option>
+                        <option value = "syd">Sydney Airport (SYD)</option>
+                    </select>
+                </label>&nbsp;
+                <label>Number of Passengers:
+                    <select name = "numPassengers" form = "ticketForm" required>
+                        <option value = ""> </option>
+                        <option value = "1">1</option>
+                        <option value = "2">2</option>
+                        <option value = "3">3</option>
+                        <option value = "4">4</option>
+                        <option value = "5">5</option>
+                        <option value = "6">6</option>
+                    </select>
+                </label>&nbsp;<br>
+                <label>Leave Date:
+                  <input type = "date" name = "leaveDate" min = "2017-04-26" max = "2018-05-03"
+                    placeholder = "mm/dd/yyyy" required>
+                </label>&nbsp;
+                <label>Return:
+                    <!--!!!!!! Return date should be at least 1 day after leave date (ie today) -->
+                    <input type = "date" name = "returnDate" min = "2017-04-26" max = "2018-05-03"
+                      placeholder = "mm/dd/yyyy" required>
+                </label>&nbsp;
+                <input type = "submit" value = "Submit" />
+                <input type = "reset">
+            </form>
+
+            <h1 id = "destinations">Destinations</h1>
+            <h2>Bangkok, Thailand</h2>
+
+            <h2>Detroit Metropolital Airport (DTW)</h2>
+            <p>
+                <img src="kohchang.jpg" alt="Koh Chang in Thailand"  style="width: 20%; height: 20%; float: right;"> <!--use inline style ionstead to comply w validation -->
+                Picture and video of each destination (Audio tag)
+            </p>
+            <footer>
+                &copy; Tya Chuanromanee 2017 &nbsp;
+            </footer>
+        </div>
+    </body>
+</html>

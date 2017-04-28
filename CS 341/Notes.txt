@@ -1,0 +1,19 @@
+Mon 4/17/17
+----------------------------------------------------------------------
+w3c:	world wide web consortium: forms recommendations for html/css
+align:	default value is horizontal
+For text to be red:   font-color: red; (or color: red;)
+default size for font is 12pt; how many font sizes are there?
+ul: default is bullet points
+	an ul inside a ul->li would give white (not filled in) bullets
+GIF: Graphic Interface Format
+JPEG: Joint Photographic Experts Group
+Image borders are specified in pixels
+Whitespace around an image: padding
+a name ="----" for # targets inside the page (DC)
+<body bgcolor="#--------"> for html background color
+1pt = 1/72 in
+1pc = 12 pt
+alt (eg. for img) character limitation: 1,025
+
+default margin around images: 2px
