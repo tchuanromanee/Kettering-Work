@@ -1,6 +1,5 @@
 body {
     background-color: SteelBlue;
-    background-image: url(seamless_pattern_color_02.jpg);
     font-size: 12pt;
     font-family: sans-serif, arial;
 }
@@ -39,27 +38,18 @@ img {
     padding: 10px;
 }
 
-dt {
-    font-style: italic;
-    color: #545960;
-}
-
-table {
-    border-color: steelblue;
-    border-width: thin;
-    border-style: solid;
-}
-
-td {
-    padding: 5px;
-}
 
 footer {
     text-align: center;
 }
 
+form {
+    display: block;
+}
+
 /* Div definitions */
 /* The div is an ID because maincontent will only occur once */
+
 #maincontent {
     position: relative;
     padding: 15px;
@@ -67,4 +57,48 @@ footer {
     background-color: white;
     width: 60%;
     text-align: justify;
+}
+
+
+@media screen and (min-width: 1025px) {
+    #maincontent {
+        width: 60%;
+        position: relative;
+        padding: 15px;
+        margin: auto;
+        background-color: white;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+    #maincontent {
+        width: 80%;
+        font-size: 16pt;
+        position: relative;
+        padding: 15px;
+        margin: auto;
+        background-color: white;
+        text-align: justify;
+    }
+}
+
+@media screen
+    and (max-width : 600px) {
+    iframe {
+        width: 75%;
+    }
+    img {
+        width: 30%;
+        height: 30%;
+    }
+    #maincontent {
+        width: 100%;
+        font-size: 16pt;
+        position: relative;
+        padding: 15px;
+        margin: auto;
+        background-color: white;
+        text-align: justify;
+    }
 }

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
+        <!-- <meta name="viewport" content="max-width" /> -->
+        <meta name="viewport" content="width=max-width, initial-scale=1.0" />
+        <!-- <meta name="viewport" content="width=max-width, initial-scale=1.0"> -->
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
         <title>Welcome to the Air Ticket Reservation System!</title>
         <link rel = "stylesheet" type = "text/css" href = "style.css">
@@ -9,37 +12,34 @@
     <body>
         <div id = "maincontent">
             <h1 id = "Welcome">Welcome to the Air Ticket Reservation System!</h1>
-            <p>
-                Insert info about ticket reservation here
-            </p>
-            <h1 id = "professional">Reserve Tickets</h1>
+            <h2>Reserve Tickets</h2>
             <form method = "get" autocomplete = "on" id ="ticketForm">
                 <label>From:
-                    <select name = "fromList" form = "ticketForm" required>
+                    <select name = "fromList" form = "ticketForm" id = "fromList" required>
                         <option value = ""> </option>
                         <option value = "bkk">Suvarnabhumi Airport (BKK)</option>
                         <option value = "dtw">Detroit Metropolitan Airport (DTW)</option>
-                        <option value = "inc">Incheon International Airport (ICN)</option>
+                        <option value = "icn">Incheon International Airport (ICN)</option>
                         <option value = "lga">LaGuardia Airport (LGA)</option>
                         <option value = "nrt">Narita International Airport (NRT)</option>
                         <option value = "sin">Singapore Changi Airport (SIN)</option>
                         <option value = "syd">Sydney Airport (SYD)</option>
                     </select>
-                </label>&nbsp;
+                </label><br />
                 <label>To:
-                    <select name = "toList" form = "ticketForm" required>
+                    <select name = "toList" form = "ticketForm" id = "toList" required>
                         <option value = ""> </option>
                         <option value = "bkk">Suvarnabhumi Airport (BKK)</option>
                         <option value = "dtw">Detroit Metropolitan Airport (DTW)</option>
-                        <option value = "inc">Incheon International Airport (ICN)</option>
+                        <option value = "icn">Incheon International Airport (ICN)</option>
                         <option value = "lga">LaGuardia Airport (LGA)</option>
                         <option value = "nrt">Narita International Airport (NRT)</option>
                         <option value = "sin">Singapore Changi Airport (SIN)</option>
                         <option value = "syd">Sydney Airport (SYD)</option>
                     </select>
-                </label>&nbsp;
+                </label><br />
                 <label>Number of Passengers:
-                    <select name = "numPassengers" form = "ticketForm" required>
+                    <select name = "numPassengers" form = "ticketForm" id = "numPassengers" required>
                         <option value = ""> </option>
                         <option value = "1">1</option>
                         <option value = "2">2</option>
@@ -48,30 +48,51 @@
                         <option value = "5">5</option>
                         <option value = "6">6</option>
                     </select>
-                </label>&nbsp;<br>
+                </label>&nbsp;<br />
                 <label>Leave Date:
-                  <input type = "date" name = "leaveDate" min = "2017-04-26" max = "2018-05-03"
+                  <input type = "date" id = "leaveDate" name = "leaveDate"
                     placeholder = "mm/dd/yyyy" required>
-                </label>&nbsp;
+                </label><br />
                 <label>Return:
-                    <!--!!!!!! Return date should be at least 1 day after leave date (ie today) -->
-                    <input type = "date" name = "returnDate" min = "2017-04-26" max = "2018-05-03"
+                    <input type = "date" id = "returnDate" name = "returnDate"
                       placeholder = "mm/dd/yyyy" required>
                 </label>&nbsp;
-                <input type = "submit" value = "Submit" />
+                <input type = "button" id = "submitButton" value = "Submit" />
                 <input type = "reset">
             </form>
-
+            <p id = "results"></p>
+            <button name="continueButton" id = "continueButton" style="display:none;">
+                continue
+            </button>
             <h1 id = "destinations">Destinations</h1>
             <h2>Bangkok, Thailand</h2>
-
-            <h2>Detroit Metropolital Airport (DTW)</h2>
             <p>
-                <img src="kohchang.jpg" alt="Koh Chang in Thailand"  style="width: 20%; height: 20%; float: right;"> <!--use inline style ionstead to comply w validation -->
-                Picture and video of each destination (Audio tag)
+                Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life.
+                The boat-filled Chao Phraya River feeds its network of canals, flowing past the Rattanakosin royal
+                district, home to opulent Grand Palace and its sacred Wat Phra Kaew Temple. Nearby is Wat Pho Temple
+                with an enormous reclining Buddha and, on the opposite shore, Wat Arun Temple with its steep steps
+                and Khmer-style spire.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-OtmiE_6nqc" frameborder="0" allowfullscreen></iframe>
+
+            <h2>Detroit, MI, USA</h2>
+            <p>
+                Detroit is the largest city in the midwestern state of Michigan. Near Downtown, the neoclassical Detroit Institute of Arts is famed for the Detroit Industry Murals painted by Diego Rivera, and inspired by the city’s ties to the auto industry, giving it the nickname "Motor City." Detroit is also the birthplace of Motown Records, whose chart-topping history is on display at their original headquarters, Hitsville U.S.A.
+
+                <img src = "thedetroitfund-RB8T7P-x1200.jpg" alt = "Detroit, MI"  style = "width: 30%; height: 30%; float: right;"> <!--use inline style ionstead to comply w validation -->
+
+            </p>
+            <h2>Seoul, Korea</h2>
+            <p>
+                
             </p>
             <footer>
                 &copy; Tya Chuanromanee 2017 &nbsp;
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" />
+                </a>
             </footer>
         </div>
     </body>

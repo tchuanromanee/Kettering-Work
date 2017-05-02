@@ -1,0 +1,53 @@
+window.onerror is a property of windows to enable error handling on the webpage
+window.open creates a new window.
+window.close closes the current window.
+
+Only one window out of several can be focused. Instructions can be written in jS to focus different windows.
+
+onload = "start()" needs the quotes
+
+which object contains info about the browser itself? navigator
+
+charAt(n) is the same as Java.
+
+
+s1.concat(s1) is same as s1 + s2. Concatenation.
+
+prompt is a box that takes input from users.
+
+cookies: server sends you cookies, and according to different OSs, are different depending.
+Usually cookies are a number, lets the server knows who you are.
+To delete a cookie, change the date in the part
+
+arr.length gives the length of the array
+
+Creating a new array: var newArr = new Array(50); where there are 50 elements
+Can fill array but don't have to fill all: newArr = [1, 2, 3];
+
+++a vs a++: ++a increments AFTER the command; a++ increments BEFORE [DC]
+
+array.join("") -> result is a string with w/e inside parenthesis and quotes is in between
+
+function(b): b is the argument
+
+Given f(x), can do f(5)
+
+src in image html tag is the URL of the image
+
+defining variables in jS: use word 'var' in front of name
+
+break in a loop means exiting the loop at that point
+
+How to write style in-line: <p style = "text-decoration: none; font-size: 12pt;">text</p>
+
+links inside the page: use <id="asdasdad"> and then use <a href="#whatever theid is"></a>
+
+-------
+num = 2.4589;
+num = num.toFixed(2); // num = 2.46
+-------
+
+Midterm: 
+First part: multiple choice qs
+Second part: HTML + jS (Write some buttons, pressing the button something has to happen. Pressing the button, something happens)
+~~After done, email Stanchev with URL of midterm assn on WebTech
