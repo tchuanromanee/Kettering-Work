@@ -1,0 +1,15 @@
+1. ssh into nova.kettering.edu using username and email pw
+2. In ssh terminal, type "ssh syslab04.kettering.edu", replacing "04" with comp ID
+3. Enter username and email password again
+4. Connect to nova on WinSCP
+5. Uploading files:
+	a. Use WinSCP to drag and drop the file of interest into nova
+	b. On SSH terminal, type "scp chua0563@nova.kettering.edu:*.pdf ."
+		(replace "*.pdf with name of file (no spaces))
+		(replace "." in the end with desired relative destination directory)
+	c. Type email password
+	d. File should now be uploaded
+6. Downloading files:
+	a. On SSH terminal, type "scp [filename] chua0563@nova.kettering.edu:[dest file name]"
+	b. Type email password
+	c. File should now be seen in nova's winSCP screen
