@@ -1,0 +1,66 @@
+chua0563@syslab04:~/Documents/Ass1$ ./out
+PID
+1
+chua0563@syslab04:~/Documents/Ass1$ ./out -t
+PID     TIME
+1       00:00:01
+chua0563@syslab04:~/Documents/Ass1$ ./out -t -v
+PID     TIME            VIRTUAL MEM
+1       00:00:01        23550
+chua0563@syslab04:~/Documents/Ass1$ ./out -t -v -c
+PID     TIME            VIRTUAL MEM     CMD
+1       00:00:01        23550   /sbin/init
+chua0563@syslab04:~/Documents/Ass1$ ./out -t -v -c -s
+PID     STATE   TIME            VIRTUAL MEM     CMD
+1       S       00:00:01        23550   /sbin/init
+chua0563@syslab04:~/Documents/Ass1$ ./out -t -v -c -s -p 1
+PID     STATE   TIME            VIRTUAL MEM     CMD
+1       S       00:00:01        23550   /sbin/init
+chua0563@syslab04:~/Documents/Ass1$ ./out -t -v -c -s -p 1861
+PID     STATE   TIME            VIRTUAL MEM     CMD
+1861    S       00:00:00        73326   /usr/lib/colord/colord
+chua0563@syslab04:~/Documents/Ass1$ ./out -t -v -c -s -p 15006
+PID     STATE   TIME            VIRTUAL MEM     CMD
+15006   S       00:00:00        38854   sshd:
+chua0563@syslab04:~/Documents/Ass1$ ./out -t -v -c -s -p 1818
+PID     STATE   TIME            VIRTUAL MEM     CMD
+1818    S       00:00:00        83522   /usr/lib/x86_64-linux-gnu/notify-osd
+chua0563@syslab04:~/Documents/Ass1$ ./out -t -v -c -s -p 0002
+PID     STATE   TIME            VIRTUAL MEM     CMD
+2       S       00:00:00        0
+chua0563@syslab04:~/Documents/Ass1$ ./out -t -v -c -s -p 5555
+Process does not exist. Please try again.
+: No such file or directory
+chua0563@syslab04:~/Documents/Ass1$ ./out -v
+PID     VIRTUAL MEM
+1       23550
+chua0563@syslab04:~/Documents/Ass1$ ./out -t
+PID     TIME
+1       00:00:01
+chua0563@syslab04:~/Documents/Ass1$ ./out -s
+PID     STATE
+1       S
+chua0563@syslab04:~/Documents/Ass1$ ./out -c
+PID     CMD
+1       /sbin/init
+chua0563@syslab04:~/Documents/Ass1$ ./out -c -t -v
+PID     TIME            VIRTUAL MEM     CMD
+1       00:00:01        23550   /sbin/init
+chua0563@syslab04:~/Documents/Ass1$ ./out -c -s -t
+PID     STATE   TIME            CMD
+1       S       00:00:01        /sbin/init
+chua0563@syslab04:~/Documents/Ass1$ ./out -s -v -t
+PID     STATE   TIME            VIRTUAL MEM
+1       S       00:00:01        23550
+chua0563@syslab04:~/Documents/Ass1$ ./out -p
+./out: option requires an argument -- 'p'
+An error happened here. Please check your arguments.
+chua0563@syslab04:~/Documents/Ass1$ ./out -p 1619
+PID
+1619
+chua0563@syslab04:~/Documents/Ass1$ ./out -p 1619 -c -s
+PID     STATE   CMD
+1619    S       /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+chua0563@syslab04:~/Documents/Ass1$ ./out -p 1619 -c -s -t -v
+PID     STATE   TIME            VIRTUAL MEM     CMD
+1619    S       00:00:00        69617   /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
